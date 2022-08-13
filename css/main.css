@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("../images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0deg, 100%, 74%);
+}
+
+a {
+  color: hsl(0deg, 100%, 74%);
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  margin: 0 auto;
+  width: 70%;
+}
+section .card-section {
+  margin-top: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section .card-section .card-section__one,
+section .card-section .card-section__second {
+  padding: 15px;
+}
+section .card-section .card-section__one {
+  padding: 180px 50px;
+}
+section .card-section .card-section__one h1.one__title {
+  line-height: 35px;
+  width: 80%;
+  color: #fff;
+  font-size: 35px;
+}
+section .card-section .card-section__one p.one__description {
+  width: 90%;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #fff;
+}
+section .card-section .card-section__second .second__card-title {
+  text-align: center;
+  background-color: hsl(248deg, 32%, 49%);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 8px 0px rgba(177, 111, 111, 0.788);
+}
+section .card-section .card-section__second .second__card-title h3 {
+  font-size: 16px;
+  color: hsl(246deg, 25%, 77%);
+}
+section .card-section .card-section__second .second__card-title h3 b {
+  color: #fff;
+}
+section .card-section .card-section__second .second__card-form {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+section .card-section .card-section__second .second__card-form .second__card-form--inputs {
+  margin-bottom: 20px;
+}
+section .card-section .card-section__second .second__card-form .second__card-form--inputs p.error {
+  text-align: right;
+  font-size: 10px;
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 800;
+  font-style: italic;
+  margin-top: 5px;
+}
+section .card-section .card-section__second .second__card-form .second__card-form--inputs input.active-error {
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 12px;
+}
+section .card-section .card-section__second .second__card-form .second__card-form--inputs input.active-error::placeholder {
+  color: hsl(0deg, 100%, 74%);
+}
+section .card-section .card-section__second .second__card-form .second__card-form--inputs input {
+  border: 1px solid hsl(246deg, 25%, 77%);
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px 25px;
+  font-weight: 700;
+}
+section .card-section .card-section__second .second__card-form .second__card-form--inputs input:focus {
+  border-color: hsl(249deg, 10%, 26%);
+}
+section .card-section .card-section__second .second__card-form button.second__card-form--button {
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: 1px solid hsl(246deg, 25%, 77%);
+  color: #fff;
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  background-color: hsl(154deg, 59%, 51%);
+}
+section .card-section .card-section__second .second__card-form p.second__card-form--terms {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: hsl(246deg, 25%, 77%);
+  font-weight: 700;
+}
+section .card-section .card-section__second .second__card-form p.second__card-form--terms b {
+  color: hsl(0deg, 100%, 74%);
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 1000px) {
+  section {
+    width: 90%;
+  }
+}
+@media (max-width: 712px) {
+  section {
+    width: 80%;
+  }
+  section .card-section {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  section .card-section .card-section__one {
+    text-align: center;
+    padding: 0 0;
+  }
+  section .card-section .card-section__one h1.one__title {
+    line-height: 35px;
+    width: 100%;
+    color: #fff;
+    font-size: 35px;
+  }
+  section .card-section .card-section__one p.one__description {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #fff;
+  }
+}
+@media (max-width: 419px) {
+  section {
+    width: 95%;
+  }
+  section .card-section .card-section__second .second__card-form button.second__card-form--button {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
